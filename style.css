@@ -3,712 +3,672 @@
 ======================================== */
 
 * {
-    box-sizing: border-box;
-  }
-  
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-  }
-  
-  
-  /* ========================================
-     화면
-  ======================================== */
-  
-  body {
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
-  
-  
-  /* ========================================
-     전체 여행 영역
-  ======================================== */
-  
-  .travel {
-    display: flex;
-    align-items: center;
-  
-    width: max-content;
-    height: 100vh;
-  
-    gap: 0;
-    padding: 0;
-  
-    background: #ffffff;
-  }
-  
-  
-  /* ========================================
-     이미지 + 번호를 묶는 박스
-  ======================================== */
-  
-  .photo {
-    position: relative;
-  
-    display: flex;
-    align-items: center;
-  
-    flex-shrink: 0;
-  
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  /* ========================================
-     번호
-  ======================================== */
-  
-  .number {
-    position: absolute;
-  
-    top: -20px;
-    left: 50%;
-  
-    transform: translateX(-50%);
-  
-    font-size: 12px;
-    line-height: 1;
-  
-    color: #000;
-  
-    white-space: nowrap;
-  
-    z-index: 10;
-  }
-  
-  
-  /* ========================================
-     모든 일반 사진 기본값
-  ======================================== */
-  
-  .travel img {
-    display: block;
-  
-    width: auto;
-    height: 40vh;
-  
-    object-fit: fill;
-  
-    flex-shrink: 0;
-  
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  /* ========================================
-     002 왼쪽 / 오른쪽 분할
-  ======================================== */
-  
-  .image-002 {
-    position: relative;
-  
-    width: 140vw;
-    height: 20vh;
-  
-    flex-shrink: 0;
-  
-    background-image: url("image/002.jpeg");
-    background-size: 200% 100%;
-    background-repeat: no-repeat;
-  }
-  
-  .image-002-left {
-    background-position: left center;
-  }
-  
-  .image-002-right {
-    background-position: right center;
-  }
-  
-  
-  /* ========================================
-     개별 이미지 크기 조절
-  ======================================== */
-  
-  
-  /* 001 */
-  .travel img[src="image/001.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 003 */
-  .travel img[src="image/003.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 004 */
-  .travel img[src="image/004.jpeg"] {
-    width: 30vw;
-    height: 35vh;
-  }
-  
-  
-  /* 005 */
-  .travel img[src="image/005.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 006 */
-  .travel img[src="image/006.jpeg"] {
-    width: 30vw;
-    height: 35vh;
-  }
-  
-  
-  /* 007 */
-  .travel img[src="image/007.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 008 */
-  .travel img[src="image/008.jpeg"] {
-    width: 10vw;
-    height: 60vh;
-  }
-  
-  
-  /* 009 */
-  .travel img[src="image/009.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 010 */
-  .travel img[src="image/010.jpeg"] {
-    width: 40vw;
-    height: 35vh;
-  }
-  
-  
-  /* 011 */
-  .travel img[src="image/011.jpeg"] {
-    width: 50vw;
-    height: 30vh;
-  }
-  
-  
-  /* 012 */
-  .travel img[src="image/012.jpeg"] {
-    width: 10vw;
-    height: 40vh;
-  }
-  
-  
-  /* 013 */
-  .travel img[src="image/013.jpeg"] {
-    width: auto;
-    height: 20vh;
-  }
-  
-  
-  /* 014 */
-  .travel img[src="image/014.jpeg"] {
-    width: auto;
-    height: 20vh;
-  }
-  
-  
-  /* 015 */
-  .travel img[src="image/015.jpeg"] {
-    width: auto;
-    height: 20vh;
-  }
-  
-  
-  /* 016 */
-  .travel img[src="image/016.jpeg"] {
-    width: auto;
-    height: 20vh;
-  }
-  
-  
-  /* 017 */
-  .travel img[src="image/017.jpeg"] {
-    width: auto;
-    height: 70vh;
-  }
-  
-  
-  /* 018 */
-  .travel img[src="image/018.jpeg"] {
-    width: auto;
-    height: 70vh;
-  }
-  
-  
-  /* 019 */
-  .travel img[src="image/019.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 020 */
-  .travel img[src="image/020.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 021 */
-  .travel img[src="image/021.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 022 */
-  .travel img[src="image/022.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 023 */
-  .travel img[src="image/023.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 024 */
-  .travel img[src="image/024.jpeg"] {
-    width: 40vw;
-    height: 35vh;
-  }
-  
-  
-  /* 025 */
-  .travel img[src="image/025.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 026 */
-  .travel img[src="image/026.jpeg"] {
-    width: auto;
-    height: 20vh;
-  }
-  
-  
-  /* 027 */
-  .travel img[src="image/027.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 028 */
-  .travel img[src="image/028.jpeg"] {
-    width: 35vw;
-    height: 15vh;
-  }
-  
-  
-  /* 029 */
-  .travel img[src="image/029.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 030 */
-  .travel img[src="image/030.jpeg"] {
-    width: 35vw;
-    height: 15vh;
-  }
-  
-  
-  /* 031 */
-  .travel img[src="image/031.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 032 */
-  .travel img[src="image/032.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 033 */
-  .travel img[src="image/033.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 034 */
-  .travel img[src="image/034.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 035 */
-  .travel img[src="image/035.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 036 */
-  .travel img[src="image/036.jpeg"] {
-    width: 40vw;
-    height: 40vh;
-  }
-  
-  
-  /* 037 */
-  .travel img[src="image/037.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 038 */
-  .travel img[src="image/038.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 039 */
-  .travel img[src="image/039.jpeg"] {
-    width: 40vw;
-    height: 30vh;
-  }
-  
-  
-  /* 040 */
-  .travel img[src="image/040.jpeg"] {
-    width: 5vw;
-    height: 60vh;
-  }
-  
-  
-  /* 041 */
-  .travel img[src="image/041.jpeg"] {
-    width: 40vw;
-    height: 40vh;
-  }
-  
-  
-  /* 042 */
-  .travel img[src="image/042.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 043 */
-  .travel img[src="image/043.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 044 */
-  .travel img[src="image/044.jpeg"] {
-    width: 30vw;
-    height: 10vh;
-  }
-  
-  
-  /* 045 */
-  .travel img[src="image/045.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 046 */
-  .travel img[src="image/046.jpeg"] {
-    width: auto;
-    height: 20vh;
-  }
-  
-  
-  /* 047 */
-  .travel img[src="image/047.jpeg"] {
-    width: auto;
-    height: 20vh;
-  }
-  
-  
-  /* 048 */
-  .travel img[src="image/048.jpeg"] {
-    width: auto;
-    height: 20vh;
-  }
-  
-  
-  /* 049 */
-  .travel img[src="image/049.jpeg"] {
-    width: auto;
-    height: 10vh;
-  }
-  
-  
-  /* 050 */
-  .travel img[src="image/050.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 051 */
-  .travel img[src="image/051.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 052 */
-  .travel img[src="image/052.jpeg"] {
-    width: 40vw;
-    height: 30vh;
-  }
-  
-  
-  /* 053 */
-  .travel img[src="image/053.jpeg"] {
-    width: 10vw;
-    height: 50vh;
-  }
-  
-  
-  /* 054 */
-  .travel img[src="image/054.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 055 */
-  .travel img[src="image/055.jpeg"] {
-    width: 30vw;
-    height: 30vh;
-  }
-  
-  
-  /* 056 */
-  .travel img[src="image/056.jpeg"] {
-    width: 30vw;
-    height: 40vh;
-  }
-  
-  
-  /* 057 */
-  .travel img[src="image/057.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 058 */
-  .travel img[src="image/058.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 059 */
-  .travel img[src="image/059.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 060 */
-  .travel img[src="image/060.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 061 */
-  .travel img[src="image/061.jpeg"] {
-    width: 30vw;
-    height: 10vh;
-  }
-  
-  
-  /* 062 */
-  .travel img[src="image/062.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 063 */
-  .travel img[src="image/063.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 064 */
-  .travel img[src="image/064.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 065 */
-  .travel img[src="image/065.jpeg"] {
-    width: 20vw;
-    height: 40vh;
-  }
-  
-  
-  /* 066 */
-  .travel img[src="image/066.jpeg"] {
-    width: 5vw;
-    height: 70vh;
-  }
-  
-  
-  /* 067 */
-  .travel img[src="image/067.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 068 */
-  .travel img[src="image/068.jpeg"] {
-    width: 50vw;
-    height: 40vh;
-  }
-  
-  
-  /* 069 */
-  .travel img[src="image/069.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 070 */
-  .travel img[src="image/070.jpeg"] {
-    width: auto;
-    height: 30vh;
-  }
-  
-  
-  /* 071 */
-  .travel img[src="image/071.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 072 */
-  .travel img[src="image/072.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 073 */
-  .travel img[src="image/073.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 074 */
-  .travel img[src="image/074.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 075 */
-  .travel img[src="image/075.jpeg"] {
-    width: auto;
-    height: 50vh;
-  }
-  
-  
-  /* 076 */
-  .travel img[src="image/076.jpeg"] {
-    width: 60vw;
-    height: 40vh;
-  }
-  
-  
-  /* 077 */
-  .travel img[src="image/077.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 078 */
-  .travel img[src="image/078.jpeg"] {
-    width: 15vw;
-    height: 70vh;
-  }
-  
-  
-  /* 079 */
-  .travel img[src="image/079.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 080 */
-  .travel img[src="image/080.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 081 */
-  .travel img[src="image/081.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 082 */
-  .travel img[src="image/082.jpeg"] {
-    width: 40vw;
-    height: 35vh;
-  }
-  
-  
-  /* 083 */
-  .travel img[src="image/083.jpeg"] {
-    width: auto;
-    height: 40vh;
-  }
-  
-  
-  /* 084 */
-  .travel img[src="image/084.jpeg"] {
-    width: 40vw;
-    height: 35vh;
-  }
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: #ffffff;
+}
+
+
+/* ========================================
+   화면
+======================================== */
+
+body {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+
+/* ========================================
+   전체 여행 영역
+======================================== */
+
+.travel {
+  display: flex;
+  align-items: center;
+
+  width: max-content;
+  height: 100vh;
+
+  gap: 0;
+  padding: 0;
+
+  background: #ffffff;
+}
+
+
+/* ========================================
+   모든 일반 사진 기본값
+======================================== */
+
+.travel img {
+  display: block;
+
+  width: auto;
+  height: 40vh;
+
+  object-fit: fill;
+
+  flex-shrink: 0;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ========================================
+   002 왼쪽 / 오른쪽 분할
+======================================== */
+
+.image-002 {
+  width: 140vw;
+  height: 20vh;
+
+  flex-shrink: 0;
+
+  background-image: url("image/002.jpeg");
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+}
+
+.image-002-left {
+  background-position: left center;
+}
+
+.image-002-right {
+  background-position: right center;
+}
+
+
+/* ========================================
+   개별 이미지 크기 조절
+======================================== */
+
+
+/* 001 */
+.travel img[src="image/001.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 003 */
+.travel img[src="image/003.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 004 */
+.travel img[src="image/004.jpeg"] {
+  width: 30vw;
+  height: 35vh;
+}
+
+
+/* 005 */
+.travel img[src="image/005.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 006 */
+.travel img[src="image/006.jpeg"] {
+  width: 30vw;
+  height: 35vh;
+}
+
+
+/* 007 */
+.travel img[src="image/007.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 008 */
+.travel img[src="image/008.jpeg"] {
+  width: 10vw;
+  height: 60vh;
+}
+
+
+/* 009 */
+.travel img[src="image/009.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 010 */
+.travel img[src="image/010.jpeg"] {
+  width: 40vw;
+  height: 35vh;
+}
+
+
+/* 011 */
+.travel img[src="image/011.jpeg"] {
+  width: 50vw;
+  height: 30vh;
+}
+
+
+/* 012 */
+.travel img[src="image/012.jpeg"] {
+  width: 10vw;
+  height: 40vh;
+}
+
+
+/* 013 */
+.travel img[src="image/013.jpeg"] {
+  width: auto;
+  height: 20vh;
+}
+
+
+/* 014 */
+.travel img[src="image/014.jpeg"] {
+  width: auto;
+  height: 20vh;
+}
+
+
+/* 015 */
+.travel img[src="image/015.jpeg"] {
+  width: auto;
+  height: 20vh;
+}
+
+
+/* 016 */
+.travel img[src="image/016.jpeg"] {
+  width: auto;
+  height: 20vh;
+}
+
+
+/* 017 */
+.travel img[src="image/017.jpeg"] {
+  width: auto;
+  height: 70vh;
+}
+
+
+/* 018 */
+.travel img[src="image/018.jpeg"] {
+  width: auto;
+  height: 70vh;
+}
+
+
+/* 019 */
+.travel img[src="image/019.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 020 */
+.travel img[src="image/020.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 021 */
+.travel img[src="image/021.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 022 */
+.travel img[src="image/022.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 023 */
+.travel img[src="image/023.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 024 */
+.travel img[src="image/024.jpeg"] {
+  width: 40vw;
+  height: 35vh;
+}
+
+
+/* 025 */
+.travel img[src="image/025.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 026 */
+.travel img[src="image/026.jpeg"] {
+  width: auto;
+  height: 20vh;
+}
+
+
+/* 027 */
+.travel img[src="image/027.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 028 */
+.travel img[src="image/028.jpeg"] {
+  width: 35vw;
+  height: 15vh;
+}
+
+
+/* 029 */
+.travel img[src="image/029.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 030 */
+.travel img[src="image/030.jpeg"] {
+  width: 35vw;
+  height: 15vh;
+}
+
+
+/* 031 */
+.travel img[src="image/031.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 032 */
+.travel img[src="image/032.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 033 */
+.travel img[src="image/033.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 034 */
+.travel img[src="image/034.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 035 */
+.travel img[src="image/035.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 036 */
+.travel img[src="image/036.jpeg"] {
+  width: 40vw;
+  height: 40vh;
+}
+
+
+/* 037 */
+.travel img[src="image/037.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 038 */
+.travel img[src="image/038.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 039 */
+.travel img[src="image/039.jpeg"] {
+  width: 40vw;
+  height: 30vh;
+}
+
+
+/* 040 */
+.travel img[src="image/040.jpeg"] {
+  width: 5vw;
+  height: 60vh;
+}
+
+
+/* 041 */
+.travel img[src="image/041.jpeg"] {
+  width: 40vw;
+  height: 40vh;
+}
+
+
+/* 042 */
+.travel img[src="image/042.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 043 */
+.travel img[src="image/043.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 044 */
+.travel img[src="image/044.jpeg"] {
+  width: 30vw;
+  height: 10vh;
+}
+
+
+/* 045 */
+.travel img[src="image/045.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 046 */
+.travel img[src="image/046.jpeg"] {
+  width: auto;
+  height: 20vh;
+}
+
+
+/* 047 */
+.travel img[src="image/047.jpeg"] {
+  width: auto;
+  height: 20vh;
+}
+
+
+/* 048 */
+.travel img[src="image/048.jpeg"] {
+  width: auto;
+  height: 20vh;
+}
+
+
+/* 049 */
+.travel img[src="image/049.jpeg"] {
+  width: auto;
+  height: 10vh;
+}
+
+
+/* 050 */
+.travel img[src="image/050.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 051 */
+.travel img[src="image/051.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 052 */
+.travel img[src="image/052.jpeg"] {
+  width: 40vw;
+  height: 30vh;
+}
+
+
+/* 053 */
+.travel img[src="image/053.jpeg"] {
+  width: 10vw;
+  height: 50vh;
+}
+
+
+/* 054 */
+.travel img[src="image/054.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 055 */
+.travel img[src="image/055.jpeg"] {
+  width: 30vw;
+  height: 30vh;
+}
+
+
+/* 056 */
+.travel img[src="image/056.jpeg"] {
+  width: 30vw;
+  height: 40vh;
+}
+
+
+/* 057 */
+.travel img[src="image/057.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 058 */
+.travel img[src="image/058.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 059 */
+.travel img[src="image/059.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 060 */
+.travel img[src="image/060.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 061 */
+.travel img[src="image/061.jpeg"] {
+  width: 30vw;
+  height: 10vh;
+}
+
+
+/* 062 */
+.travel img[src="image/062.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 063 */
+.travel img[src="image/063.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 064 */
+.travel img[src="image/064.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 065 */
+.travel img[src="image/065.jpeg"] {
+  width: 20vw;
+  height: 40vh;
+}
+
+
+/* 066 */
+.travel img[src="image/066.jpeg"] {
+  width: 5vw;
+  height: 70vh;
+}
+
+
+/* 067 */
+.travel img[src="image/067.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 068 */
+.travel img[src="image/068.jpeg"] {
+  width: 50vw;
+  height: 40vh;
+}
+
+
+/* 069 */
+.travel img[src="image/069.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 070 */
+.travel img[src="image/070.jpeg"] {
+  width: auto;
+  height: 30vh;
+}
+
+
+/* 071 */
+.travel img[src="image/071.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 072 */
+.travel img[src="image/072.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 073 */
+.travel img[src="image/073.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 074 */
+.travel img[src="image/074.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 075 */
+.travel img[src="image/075.jpeg"] {
+  width: auto;
+  height: 50vh;
+}
+
+
+/* 076 */
+.travel img[src="image/076.jpeg"] {
+  width: 60vw;
+  height: 40vh;
+}
+
+
+/* 077 */
+.travel img[src="image/077.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 078 */
+.travel img[src="image/078.jpeg"] {
+  width: 15vw;
+  height: 70vh;
+}
+
+
+/* 079 */
+.travel img[src="image/079.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 080 */
+.travel img[src="image/080.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 081 */
+.travel img[src="image/081.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 082 */
+.travel img[src="image/082.jpeg"] {
+  width: 40vw;
+  height: 35vh;
+}
+
+
+/* 083 */
+.travel img[src="image/083.jpeg"] {
+  width: auto;
+  height: 40vh;
+}
+
+
+/* 084 */
+.travel img[src="image/084.jpeg"] {
+  width: 40vw;
+  height: 35vh;
+}
